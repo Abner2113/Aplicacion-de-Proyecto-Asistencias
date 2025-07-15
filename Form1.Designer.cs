@@ -34,14 +34,14 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.btnRegistrarAsitencia = new System.Windows.Forms.Button();
             this.btnIniciarSesion = new System.Windows.Forms.Button();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.picAsistencia = new System.Windows.Forms.PictureBox();
+            this.picSesion = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAsistencia)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSesion)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -102,21 +102,21 @@
             this.btnIniciarSesion.UseVisualStyleBackColor = true;
             this.btnIniciarSesion.Click += new System.EventHandler(this.btnIniciarSesion_Click);
             // 
-            // pictureBox5
+            // picAsistencia
             // 
-            this.pictureBox5.Location = new System.Drawing.Point(113, 290);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox5.TabIndex = 7;
-            this.pictureBox5.TabStop = false;
+            this.picAsistencia.Location = new System.Drawing.Point(113, 290);
+            this.picAsistencia.Name = "picAsistencia";
+            this.picAsistencia.Size = new System.Drawing.Size(24, 24);
+            this.picAsistencia.TabIndex = 7;
+            this.picAsistencia.TabStop = false;
             // 
-            // pictureBox6
+            // picSesion
             // 
-            this.pictureBox6.Location = new System.Drawing.Point(113, 395);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox6.TabIndex = 8;
-            this.pictureBox6.TabStop = false;
+            this.picSesion.Location = new System.Drawing.Point(113, 395);
+            this.picSesion.Name = "picSesion";
+            this.picSesion.Size = new System.Drawing.Size(24, 24);
+            this.picSesion.TabIndex = 8;
+            this.picSesion.TabStop = false;
             // 
             // Form1
             // 
@@ -124,8 +124,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(1084, 561);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox5);
+            this.Controls.Add(this.picSesion);
+            this.Controls.Add(this.picAsistencia);
             this.Controls.Add(this.btnIniciarSesion);
             this.Controls.Add(this.btnRegistrarAsitencia);
             this.Controls.Add(this.pictureBox4);
@@ -139,8 +139,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAsistencia)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSesion)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -153,8 +153,8 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Button btnRegistrarAsitencia;
         private System.Windows.Forms.Button btnIniciarSesion;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox picAsistencia;
+        private System.Windows.Forms.PictureBox picSesion;
     }
 }
 

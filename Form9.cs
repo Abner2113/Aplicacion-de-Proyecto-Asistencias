@@ -10,37 +10,28 @@ using System.Windows.Forms;
 
 namespace Aplicacion_de_Proyecto_Asistencias
 {
-    public partial class Form2 : Form
+    public partial class Form9 : Form
     {
-        public Form2()
+        public Form9()
         {
             InitializeComponent();
-            time.Interval = 1000;
-            time.Tick += new EventHandler(time_Tick);
-            time.Start();
             this.StartPosition = FormStartPosition.CenterScreen;
+            picJustificado.Enabled = false;
+            picNoJustificado.Enabled = false;
             this.ControlBox = false;
             this.MinimizeBox = false;
             this.MaximizeBox = false;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
         }
 
-        private void Form2_Load(object sender, EventArgs e)
+        private void Form9_Load(object sender, EventArgs e)
         {
-            txtEstado.ReadOnly = true;
-            txtEstado.Text = "si";
-        }
 
-        private void time_Tick(object sender, EventArgs e)
-        {
-            lblTiempo.Text = DateTime.Now.ToString("HH:mm:ss tt");
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            Form1 salir = (Form1)Application.OpenForms["Form1"];
-            salir.BringToFront();
-            salir.Activate();
+            this.Hide();
         }
     }
 }

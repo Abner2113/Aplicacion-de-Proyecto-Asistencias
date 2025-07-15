@@ -16,6 +16,10 @@ namespace Aplicacion_de_Proyecto_Asistencias
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
+            this.ControlBox = false;
+            this.MinimizeBox = false;
+            this.MaximizeBox = false;
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
         }
 
         private void Form5_Paint(object sender, PaintEventArgs e)

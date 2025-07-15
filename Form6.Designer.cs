@@ -37,16 +37,16 @@
             this.btnInsidencias = new System.Windows.Forms.Button();
             this.btnHorarios = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.picEmpleado = new System.Windows.Forms.PictureBox();
+            this.picAsistencias = new System.Windows.Forms.PictureBox();
+            this.picIncidencias = new System.Windows.Forms.PictureBox();
+            this.picHorarios = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picEmpleado)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAsistencias)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picIncidencias)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picHorarios)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -107,6 +107,7 @@
             this.btnAsistencias.TabIndex = 10;
             this.btnAsistencias.Text = "  Historial de\r\n  Asistencias";
             this.btnAsistencias.UseVisualStyleBackColor = true;
+            this.btnAsistencias.Click += new System.EventHandler(this.btnAsistencias_Click);
             // 
             // btnInsidencias
             // 
@@ -117,6 +118,7 @@
             this.btnInsidencias.TabIndex = 11;
             this.btnInsidencias.Text = "   Historial de\r\n   Incidencias";
             this.btnInsidencias.UseVisualStyleBackColor = true;
+            this.btnInsidencias.Click += new System.EventHandler(this.btnInsidencias_Click);
             // 
             // btnHorarios
             // 
@@ -125,7 +127,7 @@
             this.btnHorarios.Name = "btnHorarios";
             this.btnHorarios.Size = new System.Drawing.Size(210, 98);
             this.btnHorarios.TabIndex = 12;
-            this.btnHorarios.Text = "Agregar \r\nHorarios";
+            this.btnHorarios.Text = " Agregar \r\n Horarios";
             this.btnHorarios.UseVisualStyleBackColor = true;
             // 
             // btnSalir
@@ -139,41 +141,41 @@
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
-            // pictureBox3
+            // picEmpleado
             // 
-            this.pictureBox3.BackColor = System.Drawing.SystemColors.Menu;
-            this.pictureBox3.Location = new System.Drawing.Point(185, 325);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox3.TabIndex = 16;
-            this.pictureBox3.TabStop = false;
+            this.picEmpleado.BackColor = System.Drawing.SystemColors.Menu;
+            this.picEmpleado.Location = new System.Drawing.Point(185, 325);
+            this.picEmpleado.Name = "picEmpleado";
+            this.picEmpleado.Size = new System.Drawing.Size(24, 24);
+            this.picEmpleado.TabIndex = 16;
+            this.picEmpleado.TabStop = false;
             // 
-            // pictureBox4
+            // picAsistencias
             // 
-            this.pictureBox4.BackColor = System.Drawing.SystemColors.Menu;
-            this.pictureBox4.Location = new System.Drawing.Point(489, 325);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox4.TabIndex = 17;
-            this.pictureBox4.TabStop = false;
+            this.picAsistencias.BackColor = System.Drawing.SystemColors.Menu;
+            this.picAsistencias.Location = new System.Drawing.Point(489, 325);
+            this.picAsistencias.Name = "picAsistencias";
+            this.picAsistencias.Size = new System.Drawing.Size(24, 24);
+            this.picAsistencias.TabIndex = 17;
+            this.picAsistencias.TabStop = false;
             // 
-            // pictureBox5
+            // picIncidencias
             // 
-            this.pictureBox5.BackColor = System.Drawing.SystemColors.Menu;
-            this.pictureBox5.Location = new System.Drawing.Point(784, 325);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox5.TabIndex = 18;
-            this.pictureBox5.TabStop = false;
+            this.picIncidencias.BackColor = System.Drawing.SystemColors.Menu;
+            this.picIncidencias.Location = new System.Drawing.Point(784, 325);
+            this.picIncidencias.Name = "picIncidencias";
+            this.picIncidencias.Size = new System.Drawing.Size(24, 24);
+            this.picIncidencias.TabIndex = 18;
+            this.picIncidencias.TabStop = false;
             // 
-            // pictureBox6
+            // picHorarios
             // 
-            this.pictureBox6.BackColor = System.Drawing.SystemColors.Menu;
-            this.pictureBox6.Location = new System.Drawing.Point(489, 470);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox6.TabIndex = 19;
-            this.pictureBox6.TabStop = false;
+            this.picHorarios.BackColor = System.Drawing.SystemColors.Menu;
+            this.picHorarios.Location = new System.Drawing.Point(489, 470);
+            this.picHorarios.Name = "picHorarios";
+            this.picHorarios.Size = new System.Drawing.Size(24, 24);
+            this.picHorarios.TabIndex = 19;
+            this.picHorarios.TabStop = false;
             // 
             // Form6
             // 
@@ -181,10 +183,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(1084, 561);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.picHorarios);
+            this.Controls.Add(this.picIncidencias);
+            this.Controls.Add(this.picAsistencias);
+            this.Controls.Add(this.picEmpleado);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnHorarios);
             this.Controls.Add(this.btnInsidencias);
@@ -199,10 +201,10 @@
             this.Load += new System.EventHandler(this.Form6_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picEmpleado)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAsistencias)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picIncidencias)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picHorarios)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -219,9 +221,9 @@
         private System.Windows.Forms.Button btnInsidencias;
         private System.Windows.Forms.Button btnHorarios;
         private System.Windows.Forms.Button btnSalir;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox picEmpleado;
+        private System.Windows.Forms.PictureBox picAsistencias;
+        private System.Windows.Forms.PictureBox picIncidencias;
+        private System.Windows.Forms.PictureBox picHorarios;
     }
 }

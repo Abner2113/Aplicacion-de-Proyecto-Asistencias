@@ -16,6 +16,14 @@ namespace Aplicacion_de_Proyecto_Asistencias
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
+            picEmpleado.Enabled = false;
+            picAsistencias.Enabled = false;
+            picIncidencias.Enabled = false;
+            picHorarios.Enabled = false;
+            this.ControlBox = false;
+            this.MinimizeBox = false;
+            this.MaximizeBox = false;
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -32,6 +40,18 @@ namespace Aplicacion_de_Proyecto_Asistencias
         {
             Form4 RegistroEmpleado = new Form4();
             RegistroEmpleado.Show();
+        }
+
+        private void btnAsistencias_Click(object sender, EventArgs e)
+        {
+            Form7 Asistencias = new Form7();
+            Asistencias.Show();
+        }
+
+        private void btnInsidencias_Click(object sender, EventArgs e)
+        {
+            Form9 Incidendias = new Form9();
+            Incidendias.Show();
         }
     }
 }

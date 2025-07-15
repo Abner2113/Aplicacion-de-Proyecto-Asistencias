@@ -17,6 +17,11 @@ namespace Aplicacion_de_Proyecto_Asistencias
             InitializeComponent();
             
             this.StartPosition = FormStartPosition.CenterScreen;
+            picAsistencia.Enabled = false;
+            picSesion.Enabled = false;
+            this.MinimizeBox = false;
+            this.MaximizeBox = false;
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
         }
 
         private void Form1_Load(object sender, EventArgs e)
