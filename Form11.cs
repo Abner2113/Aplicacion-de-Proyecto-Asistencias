@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Aplicacion_de_Proyecto_Asistencias
 {
-    public partial class Form8 : Form
+    public partial class Form11 : Form
     {
-        public Form8()
+        public Form11()
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
@@ -22,16 +22,14 @@ namespace Aplicacion_de_Proyecto_Asistencias
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
         }
 
-        private void Form8_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            Form4 form4 = new Form4();
-            form4.Show();
             this.Hide();
+        }
+
+        private void Form11_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

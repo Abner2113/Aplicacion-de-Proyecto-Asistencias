@@ -35,7 +35,25 @@ namespace Aplicacion_de_Proyecto_Asistencias
         private void btnUsuarios_Click(object sender, EventArgs e)
         {
             Form8 Usuarios = new Form8();
-            Usuarios.Show();
+            if (!string.IsNullOrEmpty(txtNombres.Text) ||
+                !string.IsNullOrEmpty(txtApellidoP.Text) ||
+                !string.IsNullOrEmpty(txtApellidoM.Text) ||
+                !string.IsNullOrEmpty(txtIdTrabajador.Text) ||
+                !string.IsNullOrEmpty(txtContraseña.Text) ||
+                !string.IsNullOrEmpty(txtConfContraseña.Text))
+            {
+                DialogResult respuesta = MessageBox.Show("¿Deseas continuar?\nTienes algo escrito\nSi continuas se perdera el progreso", "Advertencia", MessageBoxButtons.OKCancel);
+                if (respuesta == DialogResult.OK)
+                {
+                    Usuarios.Show();
+                    this.Hide();
+                }
+            }
+            else
+            {
+                Usuarios.Show();
+                this.Hide();
+            }
         }
     }
 }

@@ -22,6 +22,8 @@ namespace Aplicacion_de_Proyecto_Asistencias
             this.MinimizeBox = false;
             this.MaximizeBox = false;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.ShowIcon = false;
         }
 
         private void Form1_Load(object sender, EventArgs e)

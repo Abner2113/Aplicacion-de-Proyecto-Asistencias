@@ -27,8 +27,7 @@ namespace Aplicacion_de_Proyecto_Asistencias
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            txtEstado.ReadOnly = true;
-            txtEstado.Text = "si";
+
         }
 
         private void time_Tick(object sender, EventArgs e)

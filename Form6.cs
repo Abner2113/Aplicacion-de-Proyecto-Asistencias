@@ -53,5 +53,11 @@ namespace Aplicacion_de_Proyecto_Asistencias
             Form9 Incidendias = new Form9();
             Incidendias.Show();
         }
+
+        private void btnHorarios_Click(object sender, EventArgs e)
+        {
+            Form10 Horarios = new Form10();
+            Horarios.Show();
+        }
     }
 }

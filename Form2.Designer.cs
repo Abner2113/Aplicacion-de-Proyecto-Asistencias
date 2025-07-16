@@ -35,7 +35,6 @@
             this.btnRegistrarAsistencia = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
-            this.txtEstado = new System.Windows.Forms.TextBox();
             this.btnSalir = new System.Windows.Forms.Button();
             this.lblTiempo = new System.Windows.Forms.Label();
             this.time = new System.Windows.Forms.Timer(this.components);
@@ -65,7 +64,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(187, 187);
+            this.label1.Location = new System.Drawing.Point(187, 230);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(172, 31);
             this.label1.TabIndex = 3;
@@ -74,7 +73,7 @@
             // btnRegistrarAsistencia
             // 
             this.btnRegistrarAsistencia.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrarAsistencia.Location = new System.Drawing.Point(173, 285);
+            this.btnRegistrarAsistencia.Location = new System.Drawing.Point(173, 335);
             this.btnRegistrarAsistencia.Name = "btnRegistrarAsistencia";
             this.btnRegistrarAsistencia.Size = new System.Drawing.Size(205, 32);
             this.btnRegistrarAsistencia.TabIndex = 4;
@@ -84,7 +83,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(173, 239);
+            this.textBox1.Location = new System.Drawing.Point(173, 280);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(205, 38);
             this.textBox1.TabIndex = 5;
@@ -97,14 +96,6 @@
             this.monthCalendar1.Location = new System.Drawing.Point(427, 187);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 6;
-            // 
-            // txtEstado
-            // 
-            this.txtEstado.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEstado.Location = new System.Drawing.Point(173, 327);
-            this.txtEstado.Name = "txtEstado";
-            this.txtEstado.Size = new System.Drawing.Size(202, 38);
-            this.txtEstado.TabIndex = 7;
             // 
             // btnSalir
             // 
@@ -123,8 +114,9 @@
             this.lblTiempo.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTiempo.Location = new System.Drawing.Point(200, 397);
             this.lblTiempo.Name = "lblTiempo";
-            this.lblTiempo.Size = new System.Drawing.Size(0, 31);
+            this.lblTiempo.Size = new System.Drawing.Size(57, 31);
             this.lblTiempo.TabIndex = 9;
+            this.lblTiempo.Text = "hora";
             // 
             // time
             // 
@@ -138,7 +130,6 @@
             this.ClientSize = new System.Drawing.Size(1084, 561);
             this.Controls.Add(this.lblTiempo);
             this.Controls.Add(this.btnSalir);
-            this.Controls.Add(this.txtEstado);
             this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnRegistrarAsistencia);
@@ -163,7 +154,6 @@
         private System.Windows.Forms.Button btnRegistrarAsistencia;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
-        private System.Windows.Forms.TextBox txtEstado;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Label lblTiempo;
         private System.Windows.Forms.Timer time;
