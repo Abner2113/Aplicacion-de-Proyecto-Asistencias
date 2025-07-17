@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Aplicacion_de_Proyecto_Asistencias
 {
-    internal class ClsConexion
+    class ClsConexion
     {
 
     }
