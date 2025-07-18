@@ -24,7 +24,7 @@ namespace Aplicacion_de_Proyecto_Asistencias
 
         private void Form8_Load(object sender, EventArgs e)
         {
-
+            CargarDatos();
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
