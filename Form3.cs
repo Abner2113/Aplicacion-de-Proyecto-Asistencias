@@ -24,10 +24,6 @@ namespace Aplicacion_de_Proyecto_Asistencias
 
         private void Form3_Load(object sender, EventArgs e)
         {
-            cmbPuesto.DropDownStyle = ComboBoxStyle.DropDownList;
-            cmbPuesto.Items.Add("Empleado");
-            cmbPuesto.Items.Add("Administrador");
-            cmbPuesto.SelectedIndex = 0;
             
         }
 

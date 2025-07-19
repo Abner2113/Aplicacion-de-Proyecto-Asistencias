@@ -40,7 +40,8 @@ namespace Aplicacion_de_Proyecto_Asistencias
                 !string.IsNullOrEmpty(txtApellidoM.Text) ||
                 !string.IsNullOrEmpty(txtIdTrabajador.Text) ||
                 !string.IsNullOrEmpty(txtContraseña.Text) ||
-                !string.IsNullOrEmpty(txtConfContraseña.Text))
+                cmbCarrera.SelectedIndex >= 0 ||
+                cmbPuesto.SelectedIndex >= 0)    
             {
                 DialogResult respuesta = MessageBox.Show("¿Deseas continuar?\nTienes algo escrito\nSi continuas se perdera el progreso", "Advertencia", MessageBoxButtons.OKCancel);
                 if (respuesta == DialogResult.OK)
