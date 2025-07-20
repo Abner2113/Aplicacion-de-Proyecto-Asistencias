@@ -1,6 +1,6 @@
 ﻿namespace Aplicacion_de_Proyecto_Asistencias
 {
-    partial class Form1
+    partial class Form1_Inicio
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -118,7 +118,7 @@
             this.picSesion.TabIndex = 8;
             this.picSesion.TabStop = false;
             // 
-            // Form1
+            // Form1_Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -132,7 +132,7 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "Form1";
+            this.Name = "Form1_Inicio";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

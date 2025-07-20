@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Aplicacion_de_Proyecto_Asistencias
 {
-    public partial class Form1 : Form
+    public partial class Form1_Inicio : Form
     {
-        public Form1()
+        public Form1_Inicio()
         {
             InitializeComponent();
             
@@ -28,7 +28,7 @@ namespace Aplicacion_de_Proyecto_Asistencias
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Form2 MostrarOpc1 = new Form2();
+            Form2_Asistencia MostrarOpc1 = new Form2_Asistencia();
             Form3 MostrarOpc2 = new Form3();
             MostrarOpc1.Show();
             MostrarOpc2.Show();
@@ -36,14 +36,14 @@ namespace Aplicacion_de_Proyecto_Asistencias
 
         private void btnRegistrarAsitencia_Click(object sender, EventArgs e)
         {
-            Form2 Asistencia = new Form2();
+            Form2_Asistencia Asistencia = new Form2_Asistencia();
             if (Application.OpenForms["Form2"] == null)
             {
                 Asistencia.Show();
             }
             else
             {
-                Asistencia = (Form2)Application.OpenForms["Form2"];
+                Asistencia = (Form2_Asistencia)Application.OpenForms["Form2"];
                 Asistencia.BringToFront();
                 Asistencia.Activate();
             }

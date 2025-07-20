@@ -20,7 +20,7 @@ namespace Aplicacion_de_Proyecto_Asistencias
             picAsistencias.Enabled = false;
             picIncidencias.Enabled = false;
             picHorarios.Enabled = false;
-            this.ControlBox = false;
+            this.ControlBox = true;
             this.MinimizeBox = false;
             this.MaximizeBox = false;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;

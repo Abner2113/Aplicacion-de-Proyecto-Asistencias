@@ -31,12 +31,20 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lblNombre = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvHorarios = new System.Windows.Forms.DataGridView();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.lblDia = new System.Windows.Forms.Label();
+            this.cmbDia = new System.Windows.Forms.ComboBox();
+            this.cmbPeriodo = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHorarios)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -60,30 +68,31 @@
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.Font = new System.Drawing.Font("Arial Narrow", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.Location = new System.Drawing.Point(420, 157);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(121, 31);
+            this.lblNombre.Size = new System.Drawing.Size(169, 43);
             this.lblNombre.TabIndex = 7;
             this.lblNombre.Text = "Horario de:";
             // 
-            // dataGridView1
+            // dgvHorarios
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(370, 211);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(506, 281);
-            this.dataGridView1.TabIndex = 8;
+            this.dgvHorarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvHorarios.Location = new System.Drawing.Point(472, 210);
+            this.dgvHorarios.Name = "dgvHorarios";
+            this.dgvHorarios.Size = new System.Drawing.Size(506, 281);
+            this.dgvHorarios.TabIndex = 8;
             // 
             // btnGuardar
             // 
             this.btnGuardar.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(175, 300);
+            this.btnGuardar.Location = new System.Drawing.Point(230, 398);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(146, 67);
             this.btnGuardar.TabIndex = 9;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnSalir
             // 
@@ -96,15 +105,97 @@
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
+            // lblDia
+            // 
+            this.lblDia.AutoSize = true;
+            this.lblDia.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDia.Location = new System.Drawing.Point(199, 209);
+            this.lblDia.Name = "lblDia";
+            this.lblDia.Size = new System.Drawing.Size(33, 23);
+            this.lblDia.TabIndex = 17;
+            this.lblDia.Text = "Dia";
+            // 
+            // cmbDia
+            // 
+            this.cmbDia.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbDia.FormattingEnabled = true;
+            this.cmbDia.Location = new System.Drawing.Point(155, 235);
+            this.cmbDia.Name = "cmbDia";
+            this.cmbDia.Size = new System.Drawing.Size(121, 31);
+            this.cmbDia.TabIndex = 18;
+            // 
+            // cmbPeriodo
+            // 
+            this.cmbPeriodo.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbPeriodo.FormattingEnabled = true;
+            this.cmbPeriodo.Location = new System.Drawing.Point(320, 235);
+            this.cmbPeriodo.Name = "cmbPeriodo";
+            this.cmbPeriodo.Size = new System.Drawing.Size(121, 31);
+            this.cmbPeriodo.TabIndex = 20;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(351, 209);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(64, 23);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "Periodo";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(325, 309);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(111, 23);
+            this.label2.TabIndex = 23;
+            this.label2.Text = "Hora de salida";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(153, 309);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(123, 23);
+            this.label3.TabIndex = 21;
+            this.label3.Text = "Hora de entrada";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(155, 335);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(121, 29);
+            this.textBox1.TabIndex = 25;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(320, 335);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(116, 29);
+            this.textBox2.TabIndex = 26;
+            // 
             // Form11
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(1084, 561);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.cmbPeriodo);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.cmbDia);
+            this.Controls.Add(this.lblDia);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnGuardar);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvHorarios);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -113,7 +204,7 @@
             this.Load += new System.EventHandler(this.Form11_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHorarios)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -124,8 +215,16 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label lblNombre;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvHorarios;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Label lblDia;
+        private System.Windows.Forms.ComboBox cmbDia;
+        private System.Windows.Forms.ComboBox cmbPeriodo;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }

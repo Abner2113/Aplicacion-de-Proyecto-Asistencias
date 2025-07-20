@@ -127,7 +127,7 @@
             this.btnHorarios.Name = "btnHorarios";
             this.btnHorarios.Size = new System.Drawing.Size(210, 98);
             this.btnHorarios.TabIndex = 12;
-            this.btnHorarios.Text = " Agregar \r\n Horarios";
+            this.btnHorarios.Text = " Consultar \r\n Horarios";
             this.btnHorarios.UseVisualStyleBackColor = true;
             this.btnHorarios.Click += new System.EventHandler(this.btnHorarios_Click);
             // 

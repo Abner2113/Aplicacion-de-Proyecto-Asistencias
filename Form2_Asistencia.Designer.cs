@@ -1,6 +1,6 @@
 ﻿namespace Aplicacion_de_Proyecto_Asistencias
 {
-    partial class Form2
+    partial class Form2_Asistencia
     {
         /// <summary>
         /// Required designer variable.
@@ -33,7 +33,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnRegistrarAsistencia = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtClave = new System.Windows.Forms.TextBox();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.btnSalir = new System.Windows.Forms.Button();
             this.lblTiempo = new System.Windows.Forms.Label();
@@ -79,14 +79,15 @@
             this.btnRegistrarAsistencia.TabIndex = 4;
             this.btnRegistrarAsistencia.Text = "Registrar Asistencia";
             this.btnRegistrarAsistencia.UseVisualStyleBackColor = true;
+            this.btnRegistrarAsistencia.Click += new System.EventHandler(this.btnRegistrarAsistencia_Click);
             // 
-            // textBox1
+            // txtClave
             // 
-            this.textBox1.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(173, 280);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(205, 38);
-            this.textBox1.TabIndex = 5;
+            this.txtClave.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtClave.Location = new System.Drawing.Point(173, 280);
+            this.txtClave.Name = "txtClave";
+            this.txtClave.Size = new System.Drawing.Size(205, 38);
+            this.txtClave.TabIndex = 5;
             // 
             // monthCalendar1
             // 
@@ -131,7 +132,7 @@
             this.Controls.Add(this.lblTiempo);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.monthCalendar1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtClave);
             this.Controls.Add(this.btnRegistrarAsistencia);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
@@ -152,7 +153,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnRegistrarAsistencia;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtClave;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Label lblTiempo;

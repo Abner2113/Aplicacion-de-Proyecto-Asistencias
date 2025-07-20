@@ -31,15 +31,16 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvUsuarios = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.txtNumTrabajador = new System.Windows.Forms.TextBox();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.btnUsuarios = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -70,13 +71,14 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "Horarios";
             // 
-            // dataGridView1
+            // dgvUsuarios
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(370, 211);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(506, 281);
-            this.dataGridView1.TabIndex = 8;
+            this.dgvUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvUsuarios.Location = new System.Drawing.Point(370, 211);
+            this.dgvUsuarios.Name = "dgvUsuarios";
+            this.dgvUsuarios.Size = new System.Drawing.Size(506, 281);
+            this.dgvUsuarios.TabIndex = 8;
+            this.dgvUsuarios.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUsuarios_CellEnter);
             // 
             // label2
             // 
@@ -91,25 +93,28 @@
             // txtNumTrabajador
             // 
             this.txtNumTrabajador.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNumTrabajador.Location = new System.Drawing.Point(141, 251);
+            this.txtNumTrabajador.Location = new System.Drawing.Point(141, 250);
             this.txtNumTrabajador.Name = "txtNumTrabajador";
             this.txtNumTrabajador.Size = new System.Drawing.Size(200, 29);
             this.txtNumTrabajador.TabIndex = 10;
+            this.txtNumTrabajador.TextChanged += new System.EventHandler(this.txtNumTrabajador_TextChanged);
+            this.txtNumTrabajador.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumTrabajador_KeyPress);
             // 
             // btnBuscar
             // 
             this.btnBuscar.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.Location = new System.Drawing.Point(141, 306);
+            this.btnBuscar.Location = new System.Drawing.Point(141, 310);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(200, 36);
             this.btnBuscar.TabIndex = 11;
-            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.Text = "Ver Horario";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // btnEditar
             // 
             this.btnEditar.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditar.Location = new System.Drawing.Point(170, 365);
+            this.btnEditar.Location = new System.Drawing.Point(916, 211);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(146, 67);
             this.btnEditar.TabIndex = 12;
@@ -128,18 +133,30 @@
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
+            // btnUsuarios
+            // 
+            this.btnUsuarios.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUsuarios.Location = new System.Drawing.Point(141, 380);
+            this.btnUsuarios.Name = "btnUsuarios";
+            this.btnUsuarios.Size = new System.Drawing.Size(200, 36);
+            this.btnUsuarios.TabIndex = 17;
+            this.btnUsuarios.Text = "Ver Usuarios";
+            this.btnUsuarios.UseVisualStyleBackColor = true;
+            this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
+            // 
             // Form10
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(1084, 561);
+            this.Controls.Add(this.btnUsuarios);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.txtNumTrabajador);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvUsuarios);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -148,7 +165,7 @@
             this.Load += new System.EventHandler(this.Form10_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -159,11 +176,12 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvUsuarios;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtNumTrabajador;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Button btnUsuarios;
     }
 }

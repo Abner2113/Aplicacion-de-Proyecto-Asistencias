@@ -42,11 +42,11 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtConfContraseña = new System.Windows.Forms.TextBox();
             this.cmbPuesto = new System.Windows.Forms.ComboBox();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnUsuarios = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
+            this.cmbCarrera = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -86,6 +86,7 @@
             this.txtNombres.Name = "txtNombres";
             this.txtNombres.Size = new System.Drawing.Size(350, 29);
             this.txtNombres.TabIndex = 6;
+            this.txtNombres.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombres_KeyPress);
             // 
             // label2
             // 
@@ -104,6 +105,7 @@
             this.txtApellidoP.Name = "txtApellidoP";
             this.txtApellidoP.Size = new System.Drawing.Size(350, 29);
             this.txtApellidoP.TabIndex = 8;
+            this.txtApellidoP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtApellidoP_KeyPress);
             // 
             // label3
             // 
@@ -122,6 +124,7 @@
             this.txtApellidoM.Name = "txtApellidoM";
             this.txtApellidoM.Size = new System.Drawing.Size(350, 29);
             this.txtApellidoM.TabIndex = 10;
+            this.txtApellidoM.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtApellidoM_KeyPress);
             // 
             // label4
             // 
@@ -140,6 +143,7 @@
             this.txtIdTrabajador.Name = "txtIdTrabajador";
             this.txtIdTrabajador.Size = new System.Drawing.Size(350, 29);
             this.txtIdTrabajador.TabIndex = 12;
+            this.txtIdTrabajador.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtIdTrabajador_KeyPress);
             // 
             // btnSalir
             // 
@@ -148,6 +152,7 @@
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(80, 27);
             this.btnSalir.TabIndex = 13;
+            this.btnSalir.TabStop = false;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
@@ -169,24 +174,17 @@
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(350, 29);
             this.txtContraseña.TabIndex = 15;
+            this.txtContraseña.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtContraseña_KeyPress);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(730, 250);
+            this.label6.Location = new System.Drawing.Point(780, 250);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(159, 23);
+            this.label6.Size = new System.Drawing.Size(63, 23);
             this.label6.TabIndex = 16;
-            this.label6.Text = "Confirmar contraseña";
-            // 
-            // txtConfContraseña
-            // 
-            this.txtConfContraseña.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConfContraseña.Location = new System.Drawing.Point(630, 275);
-            this.txtConfContraseña.Name = "txtConfContraseña";
-            this.txtConfContraseña.Size = new System.Drawing.Size(350, 29);
-            this.txtConfContraseña.TabIndex = 17;
+            this.label6.Text = "Carrera";
             // 
             // cmbPuesto
             // 
@@ -195,7 +193,7 @@
             this.cmbPuesto.Location = new System.Drawing.Point(630, 350);
             this.cmbPuesto.Name = "cmbPuesto";
             this.cmbPuesto.Size = new System.Drawing.Size(350, 31);
-            this.cmbPuesto.TabIndex = 18;
+            this.cmbPuesto.TabIndex = 20;
             // 
             // btnGuardar
             // 
@@ -203,9 +201,10 @@
             this.btnGuardar.Location = new System.Drawing.Point(720, 401);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(200, 50);
-            this.btnGuardar.TabIndex = 19;
+            this.btnGuardar.TabIndex = 21;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnUsuarios
             // 
@@ -213,7 +212,7 @@
             this.btnUsuarios.Location = new System.Drawing.Point(720, 475);
             this.btnUsuarios.Name = "btnUsuarios";
             this.btnUsuarios.Size = new System.Drawing.Size(200, 50);
-            this.btnUsuarios.TabIndex = 20;
+            this.btnUsuarios.TabIndex = 22;
             this.btnUsuarios.Text = "Usuarios";
             this.btnUsuarios.UseVisualStyleBackColor = true;
             this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
@@ -225,8 +224,17 @@
             this.label7.Location = new System.Drawing.Point(780, 325);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(58, 23);
-            this.label7.TabIndex = 21;
+            this.label7.TabIndex = 19;
             this.label7.Text = "Puesto";
+            // 
+            // cmbCarrera
+            // 
+            this.cmbCarrera.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbCarrera.FormattingEnabled = true;
+            this.cmbCarrera.Location = new System.Drawing.Point(630, 275);
+            this.cmbCarrera.Name = "cmbCarrera";
+            this.cmbCarrera.Size = new System.Drawing.Size(350, 31);
+            this.cmbCarrera.TabIndex = 18;
             // 
             // Form4
             // 
@@ -234,11 +242,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(1084, 561);
+            this.Controls.Add(this.cmbCarrera);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btnUsuarios);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.cmbPuesto);
-            this.Controls.Add(this.txtConfContraseña);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtContraseña);
             this.Controls.Add(this.label5);
@@ -279,10 +287,10 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtContraseña;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtConfContraseña;
         private System.Windows.Forms.ComboBox cmbPuesto;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnUsuarios;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox cmbCarrera;
     }
 }

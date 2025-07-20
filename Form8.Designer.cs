@@ -31,15 +31,15 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvHistorialUsuarios = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.btnBuscar = new System.Windows.Forms.Button();
+            this.txtNumTrabajador = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHistorialUsuarios)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
@@ -71,13 +71,14 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "Historial de usuarios";
             // 
-            // dataGridView1
+            // dgvHistorialUsuarios
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(370, 211);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(506, 281);
-            this.dataGridView1.TabIndex = 6;
+            this.dgvHistorialUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvHistorialUsuarios.Location = new System.Drawing.Point(370, 211);
+            this.dgvHistorialUsuarios.Name = "dgvHistorialUsuarios";
+            this.dgvHistorialUsuarios.Size = new System.Drawing.Size(600, 281);
+            this.dgvHistorialUsuarios.TabIndex = 6;
+            this.dgvHistorialUsuarios.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHistorialUsuarios_CellEnter);
             // 
             // label2
             // 
@@ -89,23 +90,13 @@
             this.label2.TabIndex = 7;
             this.label2.Text = "Numero de trabajador";
             // 
-            // textBox1
+            // txtNumTrabajador
             // 
-            this.textBox1.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(151, 251);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 38);
-            this.textBox1.TabIndex = 8;
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.Location = new System.Drawing.Point(151, 306);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(200, 38);
-            this.btnBuscar.TabIndex = 9;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.txtNumTrabajador.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNumTrabajador.Location = new System.Drawing.Point(151, 251);
+            this.txtNumTrabajador.Name = "txtNumTrabajador";
+            this.txtNumTrabajador.Size = new System.Drawing.Size(200, 38);
+            this.txtNumTrabajador.TabIndex = 8;
             // 
             // pictureBox3
             // 
@@ -127,18 +118,29 @@
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.Location = new System.Drawing.Point(151, 306);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(200, 38);
+            this.btnEliminar.TabIndex = 12;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
             // Form8
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(1084, 561);
+            this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.btnBuscar);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtNumTrabajador);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvHistorialUsuarios);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -147,7 +149,7 @@
             this.Load += new System.EventHandler(this.Form8_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHistorialUsuarios)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -159,11 +161,11 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvHistorialUsuarios;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.TextBox txtNumTrabajador;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Button btnEliminar;
     }
 }
