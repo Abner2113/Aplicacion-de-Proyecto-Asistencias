@@ -31,16 +31,16 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvAsistencias = new System.Windows.Forms.DataGridView();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtIdTrabajador = new System.Windows.Forms.TextBox();
-            this.btnActualizar = new System.Windows.Forms.Button();
+            this.btnBuscar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAsistencias)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
@@ -71,13 +71,14 @@
             this.pictureBox3.TabIndex = 3;
             this.pictureBox3.TabStop = false;
             // 
-            // dataGridView1
+            // dgvAsistencias
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(317, 213);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(502, 185);
-            this.dataGridView1.TabIndex = 4;
+            this.dgvAsistencias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvAsistencias.Location = new System.Drawing.Point(317, 213);
+            this.dgvAsistencias.Name = "dgvAsistencias";
+            this.dgvAsistencias.Size = new System.Drawing.Size(502, 185);
+            this.dgvAsistencias.TabIndex = 4;
+            this.dgvAsistencias.TabStop = false;
             // 
             // pictureBox4
             // 
@@ -101,20 +102,20 @@
             // txtIdTrabajador
             // 
             this.txtIdTrabajador.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdTrabajador.Location = new System.Drawing.Point(220, 434);
+            this.txtIdTrabajador.Location = new System.Drawing.Point(317, 434);
             this.txtIdTrabajador.Name = "txtIdTrabajador";
-            this.txtIdTrabajador.Size = new System.Drawing.Size(350, 29);
+            this.txtIdTrabajador.Size = new System.Drawing.Size(253, 29);
             this.txtIdTrabajador.TabIndex = 7;
             // 
-            // btnActualizar
+            // btnBuscar
             // 
-            this.btnActualizar.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActualizar.Location = new System.Drawing.Point(620, 423);
-            this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(200, 50);
-            this.btnActualizar.TabIndex = 8;
-            this.btnActualizar.Text = "Actualizar";
-            this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.Location = new System.Drawing.Point(620, 423);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(200, 50);
+            this.btnBuscar.TabIndex = 8;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
             // 
             // btnSalir
             // 
@@ -134,11 +135,11 @@
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(1084, 561);
             this.Controls.Add(this.btnSalir);
-            this.Controls.Add(this.btnActualizar);
+            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.txtIdTrabajador);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvAsistencias);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -148,7 +149,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAsistencias)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -160,11 +161,11 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvAsistencias;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtIdTrabajador;
-        private System.Windows.Forms.Button btnActualizar;
+        private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Button btnSalir;
     }
 }

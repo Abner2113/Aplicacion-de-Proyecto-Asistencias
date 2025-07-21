@@ -51,6 +51,7 @@ namespace Aplicacion_de_Proyecto_Asistencias
             if (string.IsNullOrEmpty(txtClave.Text) || string.IsNullOrEmpty(txtContraseña.Text))
             {
                 MessageBox.Show("Por favor ingrese su clave y contraseña");
+                txtClave.Focus();
                 return;
             }
 

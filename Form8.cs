@@ -13,7 +13,7 @@ namespace Aplicacion_de_Proyecto_Asistencias
 {
     public partial class Form8 : Form
     {
-        private ClsConexion coneccion;
+        private ClsConexion conexion;
         public Form8()
         {
             InitializeComponent();
@@ -26,8 +26,8 @@ namespace Aplicacion_de_Proyecto_Asistencias
         }
         private void CargarDatos()
         {
-            coneccion = new ClsConexion();
-            MySqlConnection con = coneccion.getConnection();
+            conexion = new ClsConexion();
+            MySqlConnection con = conexion.getConnection();
 
             if (con != null)
             {
@@ -81,8 +81,8 @@ namespace Aplicacion_de_Proyecto_Asistencias
             }
             try
             {
-                coneccion = new ClsConexion();
-                MySqlConnection con = coneccion.getConnection();
+                conexion = new ClsConexion();
+                MySqlConnection con = conexion.getConnection();
 
                 string consulta = "DELETE FROM Empleado WHERE Id_Trabajador = @Id_Trabajador;";
                 MySqlCommand command = new MySqlCommand(consulta, con);

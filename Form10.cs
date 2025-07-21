@@ -99,13 +99,26 @@ namespace Aplicacion_de_Proyecto_Asistencias
 
             if (!string.IsNullOrEmpty(txtNumTrabajador.Text))
             {
-                string query = "SELECT d.dia, h.H_Entrada, h.H_Salida, h.Periodo FROM Horario h INNER JOIN Dias d ON h.Id_Dia = d.Id_dia WHERE h.Id_Trabajador = @Id_Trabajador;";
-                MySqlCommand cmd = new MySqlCommand(query, conexion.getConnection());
-                cmd.Parameters.AddWithValue("@Id_Trabajador", txtNumTrabajador.Text);
-                MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
-                DataTable dt = new DataTable();
-                adapter.Fill(dt);
-                dgvUsuarios.DataSource = dt;
+                string Verificar = "SELECT COUNT(*) FROM Empleado WHERE Id_Trabajador = @Id_Trabajador;";
+                MySqlCommand verif = new MySqlCommand(Verificar, conexion.getConnection());
+                verif.Parameters.AddWithValue("@Id_Trabajador", txtNumTrabajador.Text);
+                int count = Convert.ToInt32(verif.ExecuteScalar());
+
+                if (count > 0)
+                {
+                    string query = "SELECT d.dia, h.H_Entrada, h.H_Salida, h.Periodo FROM Horario h INNER JOIN Dias d ON h.Id_Dia = d.Id_dia WHERE h.Id_Trabajador = @Id_Trabajador;";
+                    MySqlCommand cmd = new MySqlCommand(query, conexion.getConnection());
+                    cmd.Parameters.AddWithValue("@Id_Trabajador", txtNumTrabajador.Text);
+                    MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
+                    DataTable dt = new DataTable();
+                    adapter.Fill(dt);
+                    dgvUsuarios.DataSource = dt;
+                }
+                else
+                {
+                    MessageBox.Show("El ID del trabajador no existe");
+                    txtNumTrabajador.Focus();
+                }
             }
             else
             {

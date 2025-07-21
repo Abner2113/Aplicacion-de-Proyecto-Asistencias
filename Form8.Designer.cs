@@ -78,6 +78,7 @@
             this.dgvHistorialUsuarios.Name = "dgvHistorialUsuarios";
             this.dgvHistorialUsuarios.Size = new System.Drawing.Size(600, 281);
             this.dgvHistorialUsuarios.TabIndex = 6;
+            this.dgvHistorialUsuarios.TabStop = false;
             this.dgvHistorialUsuarios.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHistorialUsuarios_CellEnter);
             // 
             // label2
@@ -113,7 +114,7 @@
             this.btnSalir.Location = new System.Drawing.Point(25, 500);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(80, 27);
-            this.btnSalir.TabIndex = 11;
+            this.btnSalir.TabIndex = 12;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
@@ -124,7 +125,7 @@
             this.btnEliminar.Location = new System.Drawing.Point(151, 306);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(200, 38);
-            this.btnEliminar.TabIndex = 12;
+            this.btnEliminar.TabIndex = 11;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);

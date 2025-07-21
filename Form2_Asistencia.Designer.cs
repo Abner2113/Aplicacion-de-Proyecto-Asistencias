@@ -38,6 +38,7 @@
             this.btnSalir = new System.Windows.Forms.Button();
             this.lblTiempo = new System.Windows.Forms.Label();
             this.time = new System.Windows.Forms.Timer(this.components);
+            this.timerAsistencias = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -76,7 +77,7 @@
             this.btnRegistrarAsistencia.Location = new System.Drawing.Point(173, 335);
             this.btnRegistrarAsistencia.Name = "btnRegistrarAsistencia";
             this.btnRegistrarAsistencia.Size = new System.Drawing.Size(205, 32);
-            this.btnRegistrarAsistencia.TabIndex = 4;
+            this.btnRegistrarAsistencia.TabIndex = 5;
             this.btnRegistrarAsistencia.Text = "Registrar Asistencia";
             this.btnRegistrarAsistencia.UseVisualStyleBackColor = true;
             this.btnRegistrarAsistencia.Click += new System.EventHandler(this.btnRegistrarAsistencia_Click);
@@ -87,7 +88,8 @@
             this.txtClave.Location = new System.Drawing.Point(173, 280);
             this.txtClave.Name = "txtClave";
             this.txtClave.Size = new System.Drawing.Size(205, 38);
-            this.txtClave.TabIndex = 5;
+            this.txtClave.TabIndex = 4;
+            this.txtClave.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtClave_KeyPress);
             // 
             // monthCalendar1
             // 
@@ -97,6 +99,7 @@
             this.monthCalendar1.Location = new System.Drawing.Point(427, 187);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 6;
+            this.monthCalendar1.TabStop = false;
             // 
             // btnSalir
             // 
@@ -123,7 +126,7 @@
             // 
             this.time.Tick += new System.EventHandler(this.time_Tick);
             // 
-            // Form2
+            // Form2_Asistencia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -137,7 +140,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "Form2";
+            this.Name = "Form2_Asistencia";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -158,5 +161,6 @@
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Label lblTiempo;
         private System.Windows.Forms.Timer time;
+        private System.Windows.Forms.Timer timerAsistencias;
     }
 }

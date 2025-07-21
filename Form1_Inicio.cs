@@ -37,13 +37,13 @@ namespace Aplicacion_de_Proyecto_Asistencias
         private void btnRegistrarAsitencia_Click(object sender, EventArgs e)
         {
             Form2_Asistencia Asistencia = new Form2_Asistencia();
-            if (Application.OpenForms["Form2"] == null)
+            if (Application.OpenForms["Form2_Asistencia"] == null)
             {
                 Asistencia.Show();
             }
             else
             {
-                Asistencia = (Form2_Asistencia)Application.OpenForms["Form2"];
+                Asistencia = (Form2_Asistencia)Application.OpenForms["Form2_Asistencia"];
                 Asistencia.BringToFront();
                 Asistencia.Activate();
             }

@@ -40,8 +40,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtEntrada = new System.Windows.Forms.TextBox();
+            this.txtSalida = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHorarios)).BeginInit();
@@ -163,21 +163,22 @@
             this.label3.TabIndex = 21;
             this.label3.Text = "Hora de entrada";
             // 
-            // textBox1
+            // txtEntrada
             // 
-            this.textBox1.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(155, 335);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(121, 29);
-            this.textBox1.TabIndex = 25;
+            this.txtEntrada.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEntrada.Location = new System.Drawing.Point(155, 335);
+            this.txtEntrada.Name = "txtEntrada";
+            this.txtEntrada.Size = new System.Drawing.Size(121, 29);
+            this.txtEntrada.TabIndex = 25;
+            this.txtEntrada.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEntrada_KeyPress);
             // 
-            // textBox2
+            // txtSalida
             // 
-            this.textBox2.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(320, 335);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(116, 29);
-            this.textBox2.TabIndex = 26;
+            this.txtSalida.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSalida.Location = new System.Drawing.Point(320, 335);
+            this.txtSalida.Name = "txtSalida";
+            this.txtSalida.Size = new System.Drawing.Size(116, 29);
+            this.txtSalida.TabIndex = 26;
             // 
             // Form11
             // 
@@ -185,8 +186,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(1084, 561);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtSalida);
+            this.Controls.Add(this.txtEntrada);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cmbPeriodo);
@@ -224,7 +225,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtEntrada;
+        private System.Windows.Forms.TextBox txtSalida;
     }
 }

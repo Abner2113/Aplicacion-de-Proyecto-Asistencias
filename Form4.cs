@@ -133,23 +133,23 @@ namespace Aplicacion_de_Proyecto_Asistencias
                     cmbPuesto.SelectedIndex = -1;
                 }
             }
-            string isertar1 = "INSERT INTO Horario (Id_Horario, H_Entrada, H_Salida, Id_Trabajador, Id_dia, periodo) VALUE (1, '0:00 AM', '0:00 PM', @Id_Trabajador, 1, '2025-2');";
+            string isertar1 = "INSERT INTO Horario (H_Entrada, H_Salida, Id_Trabajador, Id_dia, periodo) VALUE ('0:00 AM', '0:00 PM', @Id_Trabajador, 1, '2025-2');";
             MySqlCommand insertar1 = new MySqlCommand(isertar1, con);
             insertar1.Parameters.AddWithValue("@Id_Trabajador", idTrabajador);
             insertar1.ExecuteNonQuery();
-            string isertar2 = "INSERT INTO Horario (Id_Horario, H_Entrada, H_Salida, Id_Trabajador, Id_dia, periodo) VALUE (2, '0:00 AM', '0:00 PM', @Id_Trabajador, 2, '2025-2');";
+            string isertar2 = "INSERT INTO Horario (H_Entrada, H_Salida, Id_Trabajador, Id_dia, periodo) VALUE ('0:00 AM', '0:00 PM', @Id_Trabajador, 2, '2025-2');";
             MySqlCommand insertar2 = new MySqlCommand(isertar2, con);
             insertar2.Parameters.AddWithValue("@Id_Trabajador", idTrabajador);
             insertar2.ExecuteNonQuery();
-            string isertar3 = "INSERT INTO Horario (Id_Horario, H_Entrada, H_Salida, Id_Trabajador, Id_dia, periodo) VALUE (3, '0:00 AM', '0:00 PM', @Id_Trabajador, 3, '2025-2');";
+            string isertar3 = "INSERT INTO Horario (H_Entrada, H_Salida, Id_Trabajador, Id_dia, periodo) VALUE ('0:00 AM', '0:00 PM', @Id_Trabajador, 3, '2025-2');";
             MySqlCommand insertar3 = new MySqlCommand(isertar3, con);
             insertar3.Parameters.AddWithValue("@Id_Trabajador", idTrabajador);
             insertar3.ExecuteNonQuery();
-            string isertar4 = "INSERT INTO Horario (Id_Horario, H_Entrada, H_Salida, Id_Trabajador, Id_dia, periodo) VALUE (4, '0:00 AM', '0:00 PM', @Id_Trabajador, 4, '2025-2');";
+            string isertar4 = "INSERT INTO Horario (H_Entrada, H_Salida, Id_Trabajador, Id_dia, periodo) VALUE ('0:00 AM', '0:00 PM', @Id_Trabajador, 4, '2025-2');";
             MySqlCommand insertar4 = new MySqlCommand(isertar4, con);
             insertar4.Parameters.AddWithValue("@Id_Trabajador", idTrabajador);
             insertar4.ExecuteNonQuery();
-            string isertar5 = "INSERT INTO Horario (Id_Horario, H_Entrada, H_Salida, Id_Trabajador, Id_dia, periodo) VALUE (5, '0:00 AM', '0:00 PM', @Id_Trabajador, 5, '2025-2');";
+            string isertar5 = "INSERT INTO Horario (H_Entrada, H_Salida, Id_Trabajador, Id_dia, periodo) VALUE ('0:00 AM', '0:00 PM', @Id_Trabajador, 5, '2025-2');";
             MySqlCommand insertar5 = new MySqlCommand(isertar5, con);
             insertar5.Parameters.AddWithValue("@Id_Trabajador", idTrabajador);
             insertar5.ExecuteNonQuery();

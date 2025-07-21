@@ -14,12 +14,12 @@ namespace Aplicacion_de_Proyecto_Asistencias
     public partial class Form11 : Form
     {
         private ClsConexion conexion;
-        private string Id_Trabajador;
+        private string ID_Trabajador;
 
         public Form11(string Id_Trabajador)
         {
             InitializeComponent();
-            Id_Trabajador = Id_Trabajador;
+            ID_Trabajador = Id_Trabajador;
             conexion = new ClsConexion();
             CargarHorario(Id_Trabajador);
             this.StartPosition = FormStartPosition.CenterScreen;
@@ -64,12 +64,63 @@ namespace Aplicacion_de_Proyecto_Asistencias
             cmbDia.Items.Add("Viernes");
             cmbDia.SelectedIndex = -1;
             cmbPeriodo.DropDownStyle = ComboBoxStyle.DropDownList;
-            cmbPeriodo.Text = "2025-2";
+            cmbPeriodo.Items.Add("2025-2");
+            cmbPeriodo.SelectedIndex = 0;
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(txtEntrada.Text) || string.IsNullOrEmpty(txtSalida.Text) || cmbDia.SelectedIndex == -1)
+            {
+                MessageBox.Show("Por favor complete todos los campos antes de guardar.");
+                return;
+            }
 
+            int dia = cmbDia.SelectedIndex + 1;
+            int periodo = cmbPeriodo.SelectedIndex;
+            string entrada = txtEntrada.Text;
+            string salida = txtSalida.Text;
+
+            conexion = new ClsConexion();
+            MySqlConnection con = conexion.getConnection();
+
+            string actualizar = "UPDATE Horario SET H_Entrada = @Entrada, H_Salida = @Salida WHERE Id_Trabajador = @Id_Trabajador AND id_dia = @id_dia;";
+            MySqlCommand cmd = new MySqlCommand(actualizar, con);
+            cmd.Parameters.AddWithValue("@Entrada", entrada);
+            cmd.Parameters.AddWithValue("@Salida", salida);
+            cmd.Parameters.AddWithValue("@Id_Trabajador", ID_Trabajador);
+            cmd.Parameters.AddWithValue("@id_dia", dia);
+            try
+            {
+                int filasAfectadas = cmd.ExecuteNonQuery();
+                if (filasAfectadas > 0)
+                {
+                    MessageBox.Show("Horario actualizado correctamente.");
+                    CargarHorario(ID_Trabajador);
+                }
+                else
+                {
+                    MessageBox.Show("No se pudo actualizar el horario. Verifique los datos.");
+                    cmbDia.Focus();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al actualizar el horario: " + ex.Message);
+            }
+            finally
+            {
+                con.Close();
+            }
+
+        }
+
+        private void txtEntrada_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != ':' && e.KeyChar != (char)Keys.Back)
+            {
+                e.Handled = true;
+            }
         }
     }
 }
