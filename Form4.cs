@@ -28,8 +28,6 @@ namespace Aplicacion_de_Proyecto_Asistencias
         {
             this.Hide();
         }
-
-
         private void Form4_Load(object sender, EventArgs e)
         {
             cmbCarrera.DropDownStyle = ComboBoxStyle.DropDownList;
@@ -44,6 +42,8 @@ namespace Aplicacion_de_Proyecto_Asistencias
             cmbPuesto.Items.Add("Secretario");
             cmbPuesto.Items.Add("Administrador");
             cmbPuesto.SelectedIndex = -1;
+
+            txtContraseña.Enabled = false;
         }
 
         private void btnUsuarios_Click(object sender, EventArgs e)
@@ -195,6 +195,18 @@ namespace Aplicacion_de_Proyecto_Asistencias
             if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
             {
                 e.Handled = true;
+            }
+        }
+
+        private void cmbPuesto_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbPuesto.SelectedIndex == 2)
+            {
+                txtContraseña.Enabled = true;
+            }
+            else
+            {
+                txtContraseña.Enabled = false;
             }
         }
     }

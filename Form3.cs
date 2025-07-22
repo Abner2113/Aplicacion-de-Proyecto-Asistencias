@@ -27,7 +27,7 @@ namespace Aplicacion_de_Proyecto_Asistencias
 
         private void Form3_Load(object sender, EventArgs e)
         {
-            
+            txtContraseña.UseSystemPasswordChar = true;
         }
 
         private void Form3_Paint(object sender, PaintEventArgs e)

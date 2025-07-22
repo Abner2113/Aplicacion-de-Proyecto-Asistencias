@@ -15,6 +15,8 @@ namespace Aplicacion_de_Proyecto_Asistencias
         public Form1_Inicio()
         {
             InitializeComponent();
+
+            
             
             this.StartPosition = FormStartPosition.CenterScreen;
             picAsistencia.Enabled = false;

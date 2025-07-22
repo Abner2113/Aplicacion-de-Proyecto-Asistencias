@@ -65,7 +65,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(527, 163);
+            this.label1.Location = new System.Drawing.Point(546, 165);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(134, 43);
             this.label1.TabIndex = 7;
@@ -84,11 +84,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(141, 211);
+            this.label2.Location = new System.Drawing.Point(131, 211);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(212, 31);
+            this.label2.Size = new System.Drawing.Size(224, 31);
             this.label2.TabIndex = 9;
-            this.label2.Text = "Numero de trabjador";
+            this.label2.Text = "Numero de trabajador";
             // 
             // txtNumTrabajador
             // 

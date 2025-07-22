@@ -34,13 +34,12 @@
             this.dgvHistorialUsuarios = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.txtNumTrabajador = new System.Windows.Forms.TextBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnActualizar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHistorialUsuarios)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -76,7 +75,7 @@
             this.dgvHistorialUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvHistorialUsuarios.Location = new System.Drawing.Point(370, 211);
             this.dgvHistorialUsuarios.Name = "dgvHistorialUsuarios";
-            this.dgvHistorialUsuarios.Size = new System.Drawing.Size(600, 281);
+            this.dgvHistorialUsuarios.Size = new System.Drawing.Size(600, 280);
             this.dgvHistorialUsuarios.TabIndex = 6;
             this.dgvHistorialUsuarios.TabStop = false;
             this.dgvHistorialUsuarios.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHistorialUsuarios_CellEnter);
@@ -98,15 +97,6 @@
             this.txtNumTrabajador.Name = "txtNumTrabajador";
             this.txtNumTrabajador.Size = new System.Drawing.Size(200, 38);
             this.txtNumTrabajador.TabIndex = 8;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.SystemColors.Menu;
-            this.pictureBox3.Location = new System.Drawing.Point(170, 350);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(161, 150);
-            this.pictureBox3.TabIndex = 10;
-            this.pictureBox3.TabStop = false;
             // 
             // btnSalir
             // 
@@ -130,15 +120,26 @@
             this.btnEliminar.UseVisualStyleBackColor = true;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
+            // btnActualizar
+            // 
+            this.btnActualizar.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizar.Location = new System.Drawing.Point(151, 365);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(200, 38);
+            this.btnActualizar.TabIndex = 13;
+            this.btnActualizar.Text = "Actualizar";
+            this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
+            // 
             // Form8
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(1084, 561);
+            this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnSalir);
-            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.txtNumTrabajador);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dgvHistorialUsuarios);
@@ -151,7 +152,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHistorialUsuarios)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -165,8 +165,8 @@
         private System.Windows.Forms.DataGridView dgvHistorialUsuarios;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtNumTrabajador;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnActualizar;
     }
 }

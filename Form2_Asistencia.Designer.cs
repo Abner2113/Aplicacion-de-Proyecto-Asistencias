@@ -39,6 +39,7 @@
             this.lblTiempo = new System.Windows.Forms.Label();
             this.time = new System.Windows.Forms.Timer(this.components);
             this.timerAsistencias = new System.Windows.Forms.Timer(this.components);
+            this.btnSalida = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -76,7 +77,7 @@
             this.btnRegistrarAsistencia.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrarAsistencia.Location = new System.Drawing.Point(173, 335);
             this.btnRegistrarAsistencia.Name = "btnRegistrarAsistencia";
-            this.btnRegistrarAsistencia.Size = new System.Drawing.Size(205, 32);
+            this.btnRegistrarAsistencia.Size = new System.Drawing.Size(200, 36);
             this.btnRegistrarAsistencia.TabIndex = 5;
             this.btnRegistrarAsistencia.Text = "Registrar Asistencia";
             this.btnRegistrarAsistencia.UseVisualStyleBackColor = true;
@@ -116,7 +117,7 @@
             // 
             this.lblTiempo.AutoSize = true;
             this.lblTiempo.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTiempo.Location = new System.Drawing.Point(200, 397);
+            this.lblTiempo.Location = new System.Drawing.Point(187, 438);
             this.lblTiempo.Name = "lblTiempo";
             this.lblTiempo.Size = new System.Drawing.Size(57, 31);
             this.lblTiempo.TabIndex = 9;
@@ -126,12 +127,23 @@
             // 
             this.time.Tick += new System.EventHandler(this.time_Tick);
             // 
+            // btnSalida
+            // 
+            this.btnSalida.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalida.Location = new System.Drawing.Point(173, 383);
+            this.btnSalida.Name = "btnSalida";
+            this.btnSalida.Size = new System.Drawing.Size(200, 36);
+            this.btnSalida.TabIndex = 10;
+            this.btnSalida.Text = "Registrar Salida";
+            this.btnSalida.UseVisualStyleBackColor = true;
+            // 
             // Form2_Asistencia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(1084, 561);
+            this.Controls.Add(this.btnSalida);
             this.Controls.Add(this.lblTiempo);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.monthCalendar1);
@@ -162,5 +174,6 @@
         private System.Windows.Forms.Label lblTiempo;
         private System.Windows.Forms.Timer time;
         private System.Windows.Forms.Timer timerAsistencias;
+        private System.Windows.Forms.Button btnSalida;
     }
 }

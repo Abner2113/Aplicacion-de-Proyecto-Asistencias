@@ -127,7 +127,7 @@
             this.pictureBox3.BackColor = System.Drawing.SystemColors.Menu;
             this.pictureBox3.Location = new System.Drawing.Point(443, 203);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(512, 297);
+            this.pictureBox3.Size = new System.Drawing.Size(512, 300);
             this.pictureBox3.TabIndex = 11;
             this.pictureBox3.TabStop = false;
             // 

@@ -31,11 +31,14 @@ namespace Aplicacion_de_Proyecto_Asistencias
 
             if (con != null)
             {
-                string consulta = "SELECT Empleado.`Id_Trabajador`, Empleado.`Nombre`, Empleado.`Apellido_Paterno`, Empleado.`Apellido_Materno`, puestos.`Puesto`, Empleado.`Contrasenia`, carreras.`Carrera` FROM Empleado INNER JOIN puestos ON Empleado.`Id_puesto` = puestos.`Id_Puesto` INNER JOIN Carreras ON Empleado.`Id_Carrera` = Carreras.`Id_Carrera`; \r\n";
+                string consulta = "SELECT Empleado.`Id_Trabajador`, Empleado.`Nombre`, Empleado.`Apellido_Paterno`, Empleado.`Apellido_Materno`, Empleado.`Id_Puesto`, puestos.`Puesto`, Empleado.`Contrasenia`, Empleado.`Id_Carrera`, carreras.`Carrera` FROM Empleado INNER JOIN puestos ON Empleado.`Id_puesto` = puestos.`Id_Puesto` INNER JOIN Carreras ON Empleado.`Id_Carrera` = Carreras.`Id_Carrera`;";
                 MySqlDataAdapter adapter = new MySqlDataAdapter(consulta, con);
                 DataTable dataTable = new DataTable();
                 adapter.Fill(dataTable);
                 dgvHistorialUsuarios.DataSource = dataTable;
+                dgvHistorialUsuarios.Columns[4].Visible = false;
+                dgvHistorialUsuarios.Columns[7].Visible = false;
+
             }
             else
             {
@@ -72,6 +75,7 @@ namespace Aplicacion_de_Proyecto_Asistencias
                 MessageBox.Show("Por favor seleccione un usuario");
                 return;
             }
+
             int id = Convert.ToInt32(txtNumTrabajador.Text);
             DialogResult result = MessageBox.Show("Seguro que quieres eliminarlo?", "Advertencia", MessageBoxButtons.YesNo);
 
@@ -79,37 +83,81 @@ namespace Aplicacion_de_Proyecto_Asistencias
             {
                 return;
             }
-            try
+            else
             {
                 conexion = new ClsConexion();
                 MySqlConnection con = conexion.getConnection();
 
-                string consulta = "DELETE FROM Empleado WHERE Id_Trabajador = @Id_Trabajador;";
+                string incidencia = "DELETE FROM Incidencia WHERE Id_Trabajador = @Id;";
+                MySqlCommand incidenciacmd = new MySqlCommand(incidencia, con);
+                incidenciacmd.Parameters.AddWithValue("id", id);
+                incidenciacmd.ExecuteNonQuery();
+
+                string Asistencia = "DELETE FROM Asistencia WHERE Id_Trabajador = @Id;";
+                MySqlCommand asistenciacmd = new MySqlCommand(Asistencia, con);
+                asistenciacmd.Parameters.AddWithValue("id", id);
+                asistenciacmd.ExecuteNonQuery();
+
+                string eliminar = "DELETE FROM Horario WHERE Id_Trabajador = @Id;";
+                MySqlCommand eliminarCommand = new MySqlCommand(eliminar, con);
+                eliminarCommand.Parameters.AddWithValue("@Id", id);
+                eliminarCommand.ExecuteNonQuery();
+
+
+                string consulta = "DELETE FROM Empleado WHERE Id_Trabajador = @Id;";
                 MySqlCommand command = new MySqlCommand(consulta, con);
-                command.Parameters.AddWithValue("@Id_Trabajador", id);
+                command.Parameters.AddWithValue("@Id", id);
+                command.ExecuteNonQuery();
 
-                int filasAfectadas = command.ExecuteNonQuery();
+                txtNumTrabajador.Clear();
+                txtNumTrabajador.Focus();
                 con.Close();
-                if (filasAfectadas > 0)
-                {
-                    MessageBox.Show("El usuario se elimino correctamente");
-                    txtNumTrabajador.Clear();
+                CargarDatos();
+                
+            }
+        }
 
-                    string eliminar = "DELETE FROM Horario WHERE Id_Trabajador = @Id_Trabajador;";
-                    MySqlCommand eliminarCommand = new MySqlCommand(eliminar, con);
-                    eliminarCommand.Parameters.AddWithValue("@Id_Trabajador", id);
-                    eliminarCommand.ExecuteNonQuery();
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtNumTrabajador.Text))
+            {
+                MessageBox.Show("Por favor seleccione un usuario");
+                return;
+            }
+            string Id_Trabajador = txtNumTrabajador.Text;
 
-                    CargarDatos();
-                }
-                else
+            conexion = new ClsConexion();
+            MySqlConnection con = conexion.getConnection();
+
+            string Verificar = "SELECT COUNT(*) FROM Empleado WHERE Id_Trabajador = @Id_Trabajador;";
+            MySqlCommand veri = new MySqlCommand(Verificar, con);
+            veri.Parameters.AddWithValue("@Id_Trabajador", Id_Trabajador);
+            int count = Convert.ToInt32(veri.ExecuteScalar());
+
+            if (count > 0)
+            {
+                string clave = txtNumTrabajador.Text;
+                for (int i = 0; i < dgvHistorialUsuarios.Rows.Count; i++)
                 {
-                    MessageBox.Show("No se puedo eliminar");
+                    if (dgvHistorialUsuarios.Rows[i].Cells[0].Value.ToString() == clave)
+                    {
+                        string Nombre = dgvHistorialUsuarios.Rows[i].Cells[1].Value.ToString();
+                        string A_paterno = dgvHistorialUsuarios.Rows[i].Cells[2].Value.ToString();
+                        string A_Materno = dgvHistorialUsuarios.Rows[i].Cells[3].Value.ToString();
+                        int puesto = Convert.ToInt32(dgvHistorialUsuarios.Rows[i].Cells[4].Value.ToString());
+                        int carrera = Convert.ToInt32(dgvHistorialUsuarios.Rows[i].Cells[7].Value.ToString());
+
+                        Form12 Actualizar = new Form12(Nombre, A_paterno, A_Materno, clave, puesto, carrera);
+                        Actualizar.Show();
+                        break;
+                    }
                 }
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("El trabjador no esta registrado");
+                txtNumTrabajador.Focus();
+                return;
             }
         }
     }
