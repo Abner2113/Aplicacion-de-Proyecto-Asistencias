@@ -46,7 +46,10 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.Menu;
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::Aplicacion_de_Proyecto_Asistencias.Properties.Resources._2021091804500411_gal__1_;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Image = global::Aplicacion_de_Proyecto_Asistencias.Properties.Resources._2021091804500411_gal__1_;
             this.pictureBox1.Location = new System.Drawing.Point(115, 32);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(104, 99);
@@ -55,7 +58,9 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackColor = System.Drawing.SystemColors.Menu;
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Image = global::Aplicacion_de_Proyecto_Asistencias.Properties.Resources._394_sin_título_20250722224825;
             this.pictureBox2.Location = new System.Drawing.Point(230, 32);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(748, 100);
@@ -65,6 +70,7 @@
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.SystemColors.Menu;
+            this.pictureBox3.BackgroundImage = global::Aplicacion_de_Proyecto_Asistencias.Properties.Resources._396_sin_título_20250722225051;
             this.pictureBox3.Location = new System.Drawing.Point(418, 192);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(550, 350);
@@ -73,7 +79,8 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.BackColor = System.Drawing.SystemColors.Menu;
+            this.pictureBox4.BackColor = System.Drawing.Color.RoyalBlue;
+            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox4.Location = new System.Drawing.Point(61, 192);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(250, 350);
@@ -104,6 +111,10 @@
             // 
             // picAsistencia
             // 
+            this.picAsistencia.BackColor = System.Drawing.Color.Transparent;
+            this.picAsistencia.BackgroundImage = global::Aplicacion_de_Proyecto_Asistencias.Properties.Resources._387_sin_título_20250621205637;
+            this.picAsistencia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picAsistencia.Image = global::Aplicacion_de_Proyecto_Asistencias.Properties.Resources._387_sin_título_20250621205637;
             this.picAsistencia.Location = new System.Drawing.Point(113, 290);
             this.picAsistencia.Name = "picAsistencia";
             this.picAsistencia.Size = new System.Drawing.Size(24, 24);
@@ -112,6 +123,10 @@
             // 
             // picSesion
             // 
+            this.picSesion.BackColor = System.Drawing.Color.Transparent;
+            this.picSesion.BackgroundImage = global::Aplicacion_de_Proyecto_Asistencias.Properties.Resources._387_sin_título_20250621205642;
+            this.picSesion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picSesion.Image = global::Aplicacion_de_Proyecto_Asistencias.Properties.Resources._387_sin_título_20250621205642;
             this.picSesion.Location = new System.Drawing.Point(113, 395);
             this.picSesion.Name = "picSesion";
             this.picSesion.Size = new System.Drawing.Size(24, 24);
@@ -122,7 +137,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackgroundImage = global::Aplicacion_de_Proyecto_Asistencias.Properties.Resources._393_sin_título_20250722224553;
             this.ClientSize = new System.Drawing.Size(1084, 561);
             this.Controls.Add(this.picSesion);
             this.Controls.Add(this.picAsistencia);

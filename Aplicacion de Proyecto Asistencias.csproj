@@ -224,5 +224,50 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\393 sin título_20250722224553.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\396 sin título_20250722225051.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2021091804500411_gal %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\394 sin título_20250722224825.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\387 sin título_20250621205637.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\387 sin título_20250621205642.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\393 sin título_20250722224559.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\397 sin título_20250722225132.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\387 sin título_20250621205651.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\387 sin título_20250621205645.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\387 sin título_20250722210133.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\387 sin título_202506212056511.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\387 sin título_20250621205653.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\399 sin título_20250722225358.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\387 sin título_20250621162210.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

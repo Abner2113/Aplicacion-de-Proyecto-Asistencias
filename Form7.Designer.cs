@@ -46,7 +46,9 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.Menu;
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::Aplicacion_de_Proyecto_Asistencias.Properties.Resources._2021091804500411_gal__1_;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(115, 32);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(104, 99);
@@ -55,7 +57,8 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackColor = System.Drawing.SystemColors.Menu;
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.BackgroundImage = global::Aplicacion_de_Proyecto_Asistencias.Properties.Resources._394_sin_título_20250722224825;
             this.pictureBox2.Location = new System.Drawing.Point(230, 32);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(748, 100);
@@ -64,7 +67,8 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.BackColor = System.Drawing.SystemColors.Menu;
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.BackgroundImage = global::Aplicacion_de_Proyecto_Asistencias.Properties.Resources._399_sin_título_20250722225358;
             this.pictureBox3.Location = new System.Drawing.Point(157, 237);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(140, 140);
@@ -83,7 +87,8 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.BackColor = System.Drawing.SystemColors.Menu;
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.BackgroundImage = global::Aplicacion_de_Proyecto_Asistencias.Properties.Resources._399_sin_título_20250722225358;
             this.pictureBox4.Location = new System.Drawing.Point(836, 237);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(140, 140);
@@ -93,6 +98,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(455, 165);
             this.label1.Name = "label1";
@@ -134,6 +140,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.BackgroundImage = global::Aplicacion_de_Proyecto_Asistencias.Properties.Resources._393_sin_título_20250722224559;
             this.ClientSize = new System.Drawing.Size(1084, 561);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnBuscar);

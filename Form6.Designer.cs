@@ -51,7 +51,9 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.Menu;
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::Aplicacion_de_Proyecto_Asistencias.Properties.Resources._2021091804500411_gal__1_;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(115, 32);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(104, 99);
@@ -60,7 +62,8 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackColor = System.Drawing.SystemColors.Menu;
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.BackgroundImage = global::Aplicacion_de_Proyecto_Asistencias.Properties.Resources._394_sin_título_20250722224825;
             this.pictureBox2.Location = new System.Drawing.Point(230, 32);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(748, 100);
@@ -70,6 +73,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(445, 159);
             this.label1.Name = "label1";
@@ -80,6 +84,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(500, 215);
             this.label2.Name = "label2";
@@ -144,7 +149,10 @@
             // 
             // picEmpleado
             // 
-            this.picEmpleado.BackColor = System.Drawing.SystemColors.Menu;
+            this.picEmpleado.BackColor = System.Drawing.Color.Transparent;
+            this.picEmpleado.BackgroundImage = global::Aplicacion_de_Proyecto_Asistencias.Properties.Resources._387_sin_título_20250621205651;
+            this.picEmpleado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picEmpleado.Cursor = System.Windows.Forms.Cursors.AppStarting;
             this.picEmpleado.Location = new System.Drawing.Point(185, 325);
             this.picEmpleado.Name = "picEmpleado";
             this.picEmpleado.Size = new System.Drawing.Size(24, 24);
@@ -153,7 +161,9 @@
             // 
             // picAsistencias
             // 
-            this.picAsistencias.BackColor = System.Drawing.SystemColors.Menu;
+            this.picAsistencias.BackColor = System.Drawing.Color.Transparent;
+            this.picAsistencias.BackgroundImage = global::Aplicacion_de_Proyecto_Asistencias.Properties.Resources._387_sin_título_202506212056511;
+            this.picAsistencias.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picAsistencias.Location = new System.Drawing.Point(489, 325);
             this.picAsistencias.Name = "picAsistencias";
             this.picAsistencias.Size = new System.Drawing.Size(24, 24);
@@ -162,7 +172,9 @@
             // 
             // picIncidencias
             // 
-            this.picIncidencias.BackColor = System.Drawing.SystemColors.Menu;
+            this.picIncidencias.BackColor = System.Drawing.Color.Transparent;
+            this.picIncidencias.BackgroundImage = global::Aplicacion_de_Proyecto_Asistencias.Properties.Resources._387_sin_título_20250621205653;
+            this.picIncidencias.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picIncidencias.Location = new System.Drawing.Point(784, 325);
             this.picIncidencias.Name = "picIncidencias";
             this.picIncidencias.Size = new System.Drawing.Size(24, 24);
@@ -171,7 +183,9 @@
             // 
             // picHorarios
             // 
-            this.picHorarios.BackColor = System.Drawing.SystemColors.Menu;
+            this.picHorarios.BackColor = System.Drawing.Color.Transparent;
+            this.picHorarios.BackgroundImage = global::Aplicacion_de_Proyecto_Asistencias.Properties.Resources._387_sin_título_20250722210133;
+            this.picHorarios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picHorarios.Location = new System.Drawing.Point(489, 470);
             this.picHorarios.Name = "picHorarios";
             this.picHorarios.Size = new System.Drawing.Size(24, 24);
@@ -183,6 +197,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.BackgroundImage = global::Aplicacion_de_Proyecto_Asistencias.Properties.Resources._393_sin_título_20250722224559;
             this.ClientSize = new System.Drawing.Size(1084, 561);
             this.Controls.Add(this.picHorarios);
             this.Controls.Add(this.picIncidencias);

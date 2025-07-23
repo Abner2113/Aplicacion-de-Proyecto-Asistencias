@@ -118,4 +118,49 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="393 sin título_20250722224553" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\393 sin título_20250722224553.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="387 sin título_20250722210133" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\387 sin título_20250722210133.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2021091804500411_gal (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2021091804500411_gal (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="393 sin título_20250722224559" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\393 sin título_20250722224559.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="387 sin título_20250621205637" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\387 sin título_20250621205637.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="387 sin título_20250621205653" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\387 sin título_20250621205653.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="399 sin título_20250722225358" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\399 sin título_20250722225358.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="396 sin título_20250722225051" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\396 sin título_20250722225051.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="397 sin título_20250722225132" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\397 sin título_20250722225132.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="387 sin título_20250621205651" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\387 sin título_20250621205651.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="387 sin título_20250621205645" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\387 sin título_20250621205645.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="387 sin título_202506212056511" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\387 sin título_202506212056511.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="387 sin título_20250621205642" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\387 sin título_20250621205642.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="394 sin título_20250722224825" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\394 sin título_20250722224825.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="387 sin título_20250621162210" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\387 sin título_20250621162210.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

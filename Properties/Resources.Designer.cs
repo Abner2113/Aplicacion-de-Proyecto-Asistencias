@@ -59,5 +59,155 @@ namespace Aplicacion_de_Proyecto_Asistencias.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _2021091804500411_gal__1_ {
+            get {
+                object obj = ResourceManager.GetObject("2021091804500411_gal (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _387_sin_título_20250621162210 {
+            get {
+                object obj = ResourceManager.GetObject("387 sin título_20250621162210", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _387_sin_título_20250621205637 {
+            get {
+                object obj = ResourceManager.GetObject("387 sin título_20250621205637", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _387_sin_título_20250621205642 {
+            get {
+                object obj = ResourceManager.GetObject("387 sin título_20250621205642", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _387_sin_título_20250621205645 {
+            get {
+                object obj = ResourceManager.GetObject("387 sin título_20250621205645", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _387_sin_título_20250621205651 {
+            get {
+                object obj = ResourceManager.GetObject("387 sin título_20250621205651", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _387_sin_título_202506212056511 {
+            get {
+                object obj = ResourceManager.GetObject("387 sin título_202506212056511", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _387_sin_título_20250621205653 {
+            get {
+                object obj = ResourceManager.GetObject("387 sin título_20250621205653", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _387_sin_título_20250722210133 {
+            get {
+                object obj = ResourceManager.GetObject("387 sin título_20250722210133", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _393_sin_título_20250722224553 {
+            get {
+                object obj = ResourceManager.GetObject("393 sin título_20250722224553", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _393_sin_título_20250722224559 {
+            get {
+                object obj = ResourceManager.GetObject("393 sin título_20250722224559", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _394_sin_título_20250722224825 {
+            get {
+                object obj = ResourceManager.GetObject("394 sin título_20250722224825", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _396_sin_título_20250722225051 {
+            get {
+                object obj = ResourceManager.GetObject("396 sin título_20250722225051", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _397_sin_título_20250722225132 {
+            get {
+                object obj = ResourceManager.GetObject("397 sin título_20250722225132", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _399_sin_título_20250722225358 {
+            get {
+                object obj = ResourceManager.GetObject("399 sin título_20250722225358", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
