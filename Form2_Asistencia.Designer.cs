@@ -38,7 +38,6 @@
             this.btnSalir = new System.Windows.Forms.Button();
             this.lblTiempo = new System.Windows.Forms.Label();
             this.time = new System.Windows.Forms.Timer(this.components);
-            this.timerAsistencias = new System.Windows.Forms.Timer(this.components);
             this.btnSalida = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -136,6 +135,7 @@
             this.btnSalida.TabIndex = 10;
             this.btnSalida.Text = "Registrar Salida";
             this.btnSalida.UseVisualStyleBackColor = true;
+            this.btnSalida.Click += new System.EventHandler(this.btnSalida_Click);
             // 
             // Form2_Asistencia
             // 
@@ -173,7 +173,6 @@
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Label lblTiempo;
         private System.Windows.Forms.Timer time;
-        private System.Windows.Forms.Timer timerAsistencias;
         private System.Windows.Forms.Button btnSalida;
     }
 }

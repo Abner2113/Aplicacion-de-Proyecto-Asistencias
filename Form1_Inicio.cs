@@ -15,9 +15,7 @@ namespace Aplicacion_de_Proyecto_Asistencias
         public Form1_Inicio()
         {
             InitializeComponent();
-
-            
-            
+            //la ventana inicia en el centro de la pantalla
             this.StartPosition = FormStartPosition.CenterScreen;
             picAsistencia.Enabled = false;
             picSesion.Enabled = false;

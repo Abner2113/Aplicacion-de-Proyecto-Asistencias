@@ -149,6 +149,7 @@ namespace Aplicacion_de_Proyecto_Asistencias
 
                         Form12 Actualizar = new Form12(Nombre, A_paterno, A_Materno, clave, puesto, carrera);
                         Actualizar.Show();
+                        this.Hide();
                         break;
                     }
                 }

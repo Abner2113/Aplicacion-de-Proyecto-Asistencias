@@ -23,6 +23,7 @@ namespace Aplicacion_de_Proyecto_Asistencias
             this.MinimizeBox = false;
             this.MaximizeBox = false;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            dgvAsistencias.ReadOnly = true;
         }
 
         private void Form7_Load(object sender, EventArgs e)
@@ -51,6 +52,16 @@ namespace Aplicacion_de_Proyecto_Asistencias
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Hide();
+        }
+
+        private void dgvAsistencias_CellEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            dgvAsistencias.Enabled = false;
+            dgvAsistencias.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow fila = dgvAsistencias.Rows[e.RowIndex];
+            }
         }
     }
 }

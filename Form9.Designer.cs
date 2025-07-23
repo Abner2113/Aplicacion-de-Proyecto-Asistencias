@@ -35,18 +35,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtNumTrabajador = new System.Windows.Forms.TextBox();
             this.btnSalir = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.btnJustificado = new System.Windows.Forms.Button();
-            this.picJustificado = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.btnNoJustificado = new System.Windows.Forms.Button();
-            this.picNoJustificado = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvIncidencia)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picJustificado)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picNoJustificado)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,7 +64,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(557, 153);
+            this.label1.Location = new System.Drawing.Point(555, 166);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(330, 43);
             this.label1.TabIndex = 7;
@@ -81,10 +73,12 @@
             // dgvIncidencia
             // 
             this.dgvIncidencia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvIncidencia.Location = new System.Drawing.Point(468, 212);
+            this.dgvIncidencia.Location = new System.Drawing.Point(476, 270);
             this.dgvIncidencia.Name = "dgvIncidencia";
             this.dgvIncidencia.Size = new System.Drawing.Size(502, 200);
             this.dgvIncidencia.TabIndex = 8;
+            this.dgvIncidencia.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvIncidencia_CellEnter);
+            this.dgvIncidencia.SelectionChanged += new System.EventHandler(this.dgvIncidencia_SelectionChanged);
             // 
             // label2
             // 
@@ -115,60 +109,6 @@
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(520, 440);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(117, 31);
-            this.label3.TabIndex = 13;
-            this.label3.Text = "Justificado";
-            // 
-            // btnJustificado
-            // 
-            this.btnJustificado.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnJustificado.Location = new System.Drawing.Point(475, 480);
-            this.btnJustificado.Name = "btnJustificado";
-            this.btnJustificado.Size = new System.Drawing.Size(200, 50);
-            this.btnJustificado.TabIndex = 14;
-            this.btnJustificado.UseVisualStyleBackColor = true;
-            // 
-            // picJustificado
-            // 
-            this.picJustificado.Location = new System.Drawing.Point(565, 495);
-            this.picJustificado.Name = "picJustificado";
-            this.picJustificado.Size = new System.Drawing.Size(24, 24);
-            this.picJustificado.TabIndex = 15;
-            this.picJustificado.TabStop = false;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(807, 440);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(145, 31);
-            this.label4.TabIndex = 16;
-            this.label4.Text = "No justificado";
-            // 
-            // btnNoJustificado
-            // 
-            this.btnNoJustificado.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNoJustificado.Location = new System.Drawing.Point(778, 480);
-            this.btnNoJustificado.Name = "btnNoJustificado";
-            this.btnNoJustificado.Size = new System.Drawing.Size(200, 50);
-            this.btnNoJustificado.TabIndex = 17;
-            this.btnNoJustificado.UseVisualStyleBackColor = true;
-            // 
-            // picNoJustificado
-            // 
-            this.picNoJustificado.Location = new System.Drawing.Point(873, 495);
-            this.picNoJustificado.Name = "picNoJustificado";
-            this.picNoJustificado.Size = new System.Drawing.Size(24, 24);
-            this.picNoJustificado.TabIndex = 18;
-            this.picNoJustificado.TabStop = false;
-            // 
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.SystemColors.Menu;
@@ -185,12 +125,6 @@
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(1084, 561);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.picNoJustificado);
-            this.Controls.Add(this.btnNoJustificado);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.picJustificado);
-            this.Controls.Add(this.btnJustificado);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.txtNumTrabajador);
             this.Controls.Add(this.label2);
@@ -204,8 +138,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvIncidencia)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picJustificado)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picNoJustificado)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -221,12 +153,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtNumTrabajador;
         private System.Windows.Forms.Button btnSalir;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnJustificado;
-        private System.Windows.Forms.PictureBox picJustificado;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button btnNoJustificado;
-        private System.Windows.Forms.PictureBox picNoJustificado;
         private System.Windows.Forms.PictureBox pictureBox4;
     }
 }

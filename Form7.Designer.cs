@@ -79,6 +79,7 @@
             this.dgvAsistencias.Size = new System.Drawing.Size(502, 185);
             this.dgvAsistencias.TabIndex = 4;
             this.dgvAsistencias.TabStop = false;
+            this.dgvAsistencias.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAsistencias_CellEnter);
             // 
             // pictureBox4
             // 

@@ -25,11 +25,14 @@ namespace Aplicacion_de_Proyecto_Asistencias
             this.MinimizeBox = false;
             this.MaximizeBox = false;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            dgvIncidencia.ReadOnly = true;
         }
 
         private void Form9_Load(object sender, EventArgs e)
         {
             cargarIncidencias();
+            dgvIncidencia.DefaultCellStyle.ForeColor = Color.Black;
+            dgvIncidencia.DefaultCellStyle.BackColor = Color.Red;
         }
 
         private void cargarIncidencias()
@@ -54,6 +57,27 @@ namespace Aplicacion_de_Proyecto_Asistencias
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Hide();
+        }
+
+        private void btnJustificado_Click(object sender, EventArgs e)
+        {
+            dgvIncidencia.SelectedRows[0].DefaultCellStyle.BackColor = Color.Lime;
+        }
+
+        private void dgvIncidencia_SelectionChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvIncidencia_CellEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            dgvIncidencia.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow fila = dgvIncidencia.Rows[e.RowIndex];
+                txtNumTrabajador.Text = fila.Cells[0].Value?.ToString();
+            }
+
         }
     }
 }
