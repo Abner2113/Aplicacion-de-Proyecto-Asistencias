@@ -16,7 +16,7 @@ namespace Aplicacion_de_Proyecto_Asistencias
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form6());
+            Application.Run(new Form1_Inicio());
         }
     }
 }

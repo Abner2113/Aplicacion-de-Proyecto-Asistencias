@@ -32,6 +32,8 @@ namespace Aplicacion_de_Proyecto_Asistencias
             this.MinimizeBox = false;
             this.MaximizeBox = false;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.ShowIcon = false;
+            this.Text = "";
         }
 
         private void Form12_Load(object sender, EventArgs e)

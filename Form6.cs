@@ -20,10 +20,12 @@ namespace Aplicacion_de_Proyecto_Asistencias
             picAsistencias.Enabled = false;
             picIncidencias.Enabled = false;
             picHorarios.Enabled = false;
-            this.ControlBox = true;
+            this.ControlBox = false;
             this.MinimizeBox = false;
             this.MaximizeBox = false;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.ShowIcon = false;
+            this.Text = ""; 
         }
 
         private void btnSalir_Click(object sender, EventArgs e)

@@ -24,6 +24,7 @@ namespace Aplicacion_de_Proyecto_Asistencias
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.ShowIcon = false;
+            this.Text = "";
         }
 
         private void Form1_Load(object sender, EventArgs e)

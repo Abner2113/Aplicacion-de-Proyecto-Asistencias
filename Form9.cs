@@ -19,20 +19,18 @@ namespace Aplicacion_de_Proyecto_Asistencias
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
-            picJustificado.Enabled = false;
-            picNoJustificado.Enabled = false;
             this.ControlBox = false;
             this.MinimizeBox = false;
             this.MaximizeBox = false;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             dgvIncidencia.ReadOnly = true;
+            this.ShowIcon = false;
+            this.Text = "";
         }
 
         private void Form9_Load(object sender, EventArgs e)
         {
             cargarIncidencias();
-            dgvIncidencia.DefaultCellStyle.ForeColor = Color.Black;
-            dgvIncidencia.DefaultCellStyle.BackColor = Color.Red;
         }
 
         private void cargarIncidencias()
@@ -57,11 +55,6 @@ namespace Aplicacion_de_Proyecto_Asistencias
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Hide();
-        }
-
-        private void btnJustificado_Click(object sender, EventArgs e)
-        {
-            dgvIncidencia.SelectedRows[0].DefaultCellStyle.BackColor = Color.Lime;
         }
 
         private void dgvIncidencia_SelectionChanged(object sender, EventArgs e)

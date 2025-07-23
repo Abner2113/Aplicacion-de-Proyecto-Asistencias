@@ -24,6 +24,8 @@ namespace Aplicacion_de_Proyecto_Asistencias
             this.MaximizeBox = false;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             dgvAsistencias.ReadOnly = true;
+            this.ShowIcon = false;
+            this.Text = "";
         }
 
         private void Form7_Load(object sender, EventArgs e)
